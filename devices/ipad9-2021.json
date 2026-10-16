@@ -1,0 +1,36 @@
+{
+  "id": "ipad9-2021",
+  "name": "iPad 9 (2021)",
+  "note": "Emuliertes Geraet: Android-AVD mit exakt den Abmessungen des iPad 9. Das Layout stimmt punkgenau, iOS selbst nicht.",
+
+  "specs": {
+    "productName": "iPad (9. Generation)",
+    "releaseYear": 2021,
+    "screenInches": 10.2,
+    "nativePixels": [1620, 2160],
+    "scale": 2,
+    "logicalPoints": [810, 1080],
+    "ppi": 265,
+    "idiom": "pad",
+    "cpu": "Apple A13 Bionic",
+    "ram": "3 GB"
+  },
+
+  "emulation": {
+    "framework": "android-emulator",
+    "avdName": "iPad9_2021",
+    "resolution": "1620x2160",
+    "dpi": 320,
+    "logicalDp": [810, 1080],
+    "why320dpi": "Bei 320 dpi entspricht 1 dp genau 2 px. 1620/2 = 810 und 2160/2 = 1080 - dieselben logischen Punkte wie das echte iPad 9. Damit sind Layouts massstabsgetreu.",
+    "ramMB": 3072,
+    "gpu": "host",
+    "density": 320,
+    "orientation": "portrait"
+  },
+
+  "flutter": {
+    "devicePreview": true,
+    "hint": "flutter run -d <emulator-id> --dart-define=DEVICE=ipad9"
+  }
+}
